@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />  
+    <!--  <link rel="shortcut icon" href="images/icon.ico" /> -->
+    <link rel="icon" type="image/x-icon" href="images/iconx.jpg">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title> Questionnaire </title> 
+ 
+
+</head>
+<body class="bg-01">
+
+    <header> 
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand pb-2" href="index.html"> 
+                <img src="images/SampleLogo.png">    
+                Brand
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><i class="fas fa-home"></i> หน้าหลัก</a></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> Somsak : Admin 
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-ic" aria-labelledby="navbarDropdownMenuLink"> 
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> ข้อมูลผู้ใช้งาน</a></li> 
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#"><i class="fas fa-cog"></i> เมนูเพิ่มเติม </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">เกี่ยวกับเรา</a></li>
+                                    <li><a class="dropdown-item" href="#">ติดต่อเรา</a></li> 
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> 
+        </nav> 
+    </header>
+
+
+
+    <main>
+
+        <div class="clearfix">&nbsp;</div> 
+        
+ 
+        <section>
+            <div class="container">
+
+                <div class="clearfix">&nbsp;</div> 
+ 
+                    
+                <div class="col main-frx">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-11 col-lg-11">
+                            
+                            <div class="row">
+                                <div class="col-10">
+                                    <h4>แบบประเมินความพึ่งพอใจ โครงการการฝึกอบรมภาษาอังกฤษเพื่อการปฏิบัติงาน</h4>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <a href="question-setting.html">
+                                        <i class="fas fa-cog"></i> ตั้งค่า
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="col"> 
+                                <div class="row"> 
+                                    <div class="col-xl-8"> 
+                                        <h5>1. เพศผู้เข้าร่วมอบรม </h5>
+                                        <h6>ตัวเลือก</h6> 
+                                        <ul>
+                                            <li>ชาย   <span>60%</span></li>
+                                            <li>หญิง <span>31%</span></li>
+                                            <li>ไม่ระบุเพศ <span>19%</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <canvas id="doughnut-chart" ></canvas>
+                                    </div>
+                                    <br>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="col">  
+                                <div class="row"> 
+
+                                    <div class="col-xl-8"> 
+                                        <h5>2. อายุ</h5>
+                                        <h6>ตัวเลือก</h6> 
+                                        <ul>
+                                            <li>18-24 ปี <span>45%</span></li>
+                                            <li>25-35 ปี <span>20%</span></li>
+                                            <li>36-45 ปี <span>11%</span></li>
+                                            <li>46-55 ปี  <span>11%</span></li>
+                                            <li>56 ปีขึ้นไป <span>11%</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <canvas id="doughnut-chart2" ></canvas>
+                                    </div>
+
+
+                                </div>
+                                <hr>
+                            </div>
+
+
+                            <div class="col">  
+                                <div class="row"> 
+                                    
+                                    <div class="col-xl-8">
+                                        <h5>3.	สถานะ   </h5>
+                                        <h6>ตัวเลือก</h6> 
+                                        <ul>
+                                            <li>นักศึกษา   <span>31%</span></li>
+                                            <li>ประชาชนทั่วไป  <span>31%</span></li>
+                                            <li>อาจารย์  <span>19%</span></li> 
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <canvas id="doughnut-chart3" ></canvas>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="col">  
+                                <div class="row"> 
+                                    
+                                    <div class="col-xl-8">
+                                        <h5>4.	เพศ อายุ และไม่ใช่นักศึกษา   </h5>
+                                        <h6>ตัวเลือก</h6> 
+                                        <ul>
+                                            <li>ชาย 18-24 ปี <span>15%</span></li>
+                                            <li>ชาย 25-35 ปี <span>30%</span></li>
+                                            <li>ชาย 36-45 ปี <span>15%</span></li>
+
+
+                                            <li>หญิง 18-24 ปี <span>10%</span></li>
+                                            <li>หญิง 25-35 ปี <span>5%</span></li>
+                                            <li>หญิง 36-45 ปี <span>5%</span></li>
+
+                                            <li>ไม่ระบุเพศ 18-24 ปี <span>5%</span></li>
+                                            <li>ไม่ระบุเพศ 25-35 ปี <span>10%</span></li>
+                                            <li>ไม่ระบุเพศ 36-45 ปี <span>5%</span></li>
+
+ 
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <canvas id="doughnut-chart4" width="300" width="300"  ></canvas>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div class="clearfix">&nbsp;</div> 
+
+            </div>
+        </section> 
+
+        <div class="clearfix">&nbsp;</div> 
+    </main>
+
+    <div class="clearfix">&nbsp;</div> 
+
+    <footer class="fixed-bottom"></footer>
+
+ 
+
+        
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>   
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+ 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    
+    <script type="text/javascript">
+ 
+        
+    </script>
+
+
+    <script>
+        new Chart(document.getElementById("doughnut-chart"), {
+            type: 'doughnut',
+            data: {
+            labels: ["เพศชาย", "เพศหญิง", "ไม่ระบุเพศ"],
+            datasets: [
+                {
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#3cba9f","#e8c3b9"],
+                    data: [60,31,18]
+                }
+            ]
+            },
+            options: {
+            title: {
+                display: true,
+                text: 'Predicted world population (millions) in 2050'
+            }
+            }
+        });
+
+        new Chart(document.getElementById("doughnut-chart2"), {
+            type: 'doughnut',
+            data: {
+            labels: ["18-24 ปี", "25-35 ปี", "36-45 ปี", "46-55 ปี ", "56 ปีขึ้นไป"],
+            datasets: [
+                {
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#3cba9f","#e8c3b9" ,"#FF6384" ,"#FFCD56"],
+                    data: [60,31,18 ,18,18]
+                }
+            ]
+            },
+            options: {
+            title: {
+                display: true,
+                text: 'Predicted world population (millions) in 2050'
+            }
+            }
+        });
+
+        new Chart(document.getElementById("doughnut-chart3"), {
+            type: 'doughnut',
+            data: {
+            labels: ["นักศึกษา", "อาจารย์", "ประชาชนทั่วไป"],
+            datasets: [
+                {
+                label: "Population (millions)",
+                backgroundColor: ["#FF6384", "#3cba9f","#3e95cd"],
+                    data: [60,10,22]
+                }
+            ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Predicted world population (millions) in 2050'
+                }
+            }
+        });
+
+        new Chart(document.getElementById("doughnut-chart4"), {
+            type: 'doughnut',
+            data: {
+            labels: ["ชาย 18-24 ปี", "ชาย 25-35 ปี", "ชาย 36-45 ปี","หญิง 18-24 ปี", "หญิง 25-35 ปี", "หญิง 36-45 ปี","ไม่ระบุเพศ 18-24 ปี", "ไม่ระบุเพศ 25-35 ปี", "ระบุเพศ 36-45 ปี "],
+            datasets: [
+                {
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#e8c3b9","#FF6384" , "#FFE01A", "#2ECC40","#E068EB" ,"#509B7D", "##FF5733","#86A3C3"],
+                    data: [60,10,22,60,10,22,60,10,22]
+                }
+            ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Predicted world population (millions) in 2050'
+                }
+            }
+        });
+    </script>
+ 
+
+            
+</body>
+
+
+
+</html>
